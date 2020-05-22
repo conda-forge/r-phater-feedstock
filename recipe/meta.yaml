@@ -1,4 +1,4 @@
-{% set version = '1.0.0' %}
+{% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/phateR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/phateR/phateR_{{ version }}.tar.gz
-  sha256: 6a20e94946a7eb3142f827d0881ffcd85bac89dd643fc12289c9144f21fecbf5
+  sha256: 85b81ec60654ad383a65ce717438e70ebcd1a8eedeed973c2d2f90e705145164
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -42,16 +42,11 @@ test:
 about:
   home: https://CRAN.R-project.org/package=phateR
   license: GPL-2.0-only
-  summary: PHATE is a tool for visualizing high dimensional single-cell data with natural progressions
-    or trajectories. PHATE uses a novel conceptual framework for learning and visualizing
-    the manifold inherent to biological systems in which smooth transitions mark the
-    progressions of cells from one state to another. To see how PHATE can be applied
-    to single-cell RNA-seq datasets from hematopoietic stem cells, human embryonic stem
-    cells, and bone marrow samples, check out our publication in Nature Biotechnology
-    at <doi:10.1038/s41587-019-0336-3>.
+  summary: PHATE is a tool for visualizing high dimensional single-cell data with natural progressions or trajectories. PHATE uses a novel conceptual framework for learning and visualizing the manifold inherent to biological systems in which smooth transitions mark the progressions of cells from one state to another. To
+    see how PHATE can be applied to single-cell RNA-seq datasets from hematopoietic stem cells, human embryonic stem cells, and bone marrow samples, check out our publication in Nature Biotechnology at <doi:10.1038/s41587-019-0336-3>.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
     - LICENSE
 
 extra:
