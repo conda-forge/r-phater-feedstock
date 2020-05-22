@@ -28,11 +28,13 @@ requirements:
     - r-matrix >=1.2_0
     - r-ggplot2
     - r-reticulate >=1.8
+    - r-memoise
   run:
     - r-base
     - r-matrix >=1.2_0
     - r-ggplot2
     - r-reticulate >=1.8
+    - r-memoise
 
 test:
   commands:
