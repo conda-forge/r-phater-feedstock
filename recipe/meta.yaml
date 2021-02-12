@@ -1,4 +1,4 @@
-{% set version = "1.0.4" %}
+{% set version = "1.0.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/phateR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/phateR/phateR_{{ version }}.tar.gz
-  sha256: 85b81ec60654ad383a65ce717438e70ebcd1a8eedeed973c2d2f90e705145164
+  sha256: c5c221d644f6ee6f69f03f7b73c93392c3bfe456cb71490a20022805bc33ab9b
 
 build:
   merge_build_host: true  # [win]
