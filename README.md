@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=phateR
 
 Package license: GPL-2.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-phater-feedstock/blob/master/LICENSE.txt)
 
 Summary: PHATE is a tool for visualizing high dimensional single-cell data with natural progressions or trajectories. PHATE uses a novel conceptual framework for learning and visualizing the manifold inherent to biological systems in which smooth transitions mark the progressions of cells from one state to another. To see how PHATE can be applied to single-cell RNA-seq datasets from hematopoietic stem cells, human embryonic stem cells, and bone marrow samples, check out our publication in Nature Biotechnology at <doi:10.1038/s41587-019-0336-3>.
-
-
 
 Current build status
 ====================
